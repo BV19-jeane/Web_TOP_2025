@@ -1,0 +1,67 @@
+﻿body
+{
+    background-color: #323231;
+    color: coral;
+    font-family: Roboto/*, Segoe UI*/;
+}
+ h4
+{
+    text-align: right;
+}
+p
+{
+    text-align:justify;
+    font-size:14pt;
+    font-family:sans-serif;
+    font w
+}
+
+ol
+{
+    list-style-type:lower-alpha;
+}
+
+.nesting-lvl-1
+{
+    list-style-type:circle;
+}
+.nesting-lvl-2
+{
+    list-style-type:"*";
+    padding-left: 10px;
+}
+table
+{
+    border:solid 2px;
+    margin:0 auto;
+    border-spacing:0;
+}
+thead
+{
+    background-color:#6b5fb5;
+    color:white;
+}
+th
+{
+    color: wheat;
+    border:solid 1px;
+    padding: 11px 33px;
+    border-top: solid 2px #aeaed3;
+    border-bottom: 
+}
+tr
+{
+    border:solid 1px;
+}
+div
+{
+    border:solid 1px;
+    margin: 22px 32px 44px 55px;/* 22px - вверх/вниз, 32зч - влево/вправо*/
+    /*margin-left:32px;
+    margin-right:12px;
+    margin-top: 22px;
+    margin-bottom: 32px;*/
+}
+
+
+
