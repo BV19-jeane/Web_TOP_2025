@@ -1,0 +1,34 @@
+﻿body
+{
+    background-color: #660033;
+}
+h1
+{
+    font-size: 50px;
+    color: #FFFFCC;
+}
+h2
+{
+    font-size: 30px;
+    color: #FFFFCC;
+    text-align: center;
+}
+hr
+{
+    margin: auto 200px;
+    border: thin; /* Убираем границу для браузера Firefox */
+    background-color: #FFFFCC; /* Цвет линии для браузера Firefox и Opera */
+    height: 5px; /* Толщина линии */
+}
+.container
+{
+    display: flex; /* flex || inline-flex */
+    justify-content: space-around;
+    background-color: #660099;
+    padding: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    /*width: 1200px;*/
+
+}

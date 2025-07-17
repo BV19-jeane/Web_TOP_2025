@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="geometria.css" rel="stylesheet" />
+    <link rel="icon" href="img/bird_origami.png" type="image/png">
+    <title>Geometria</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Figures</h1>
+    <hr>
+       
+    <div class="container">
+        <div class="item">
+            <h2>Ромб</h2>
+            <pre>
+            <script>
+                let n = Number(prompt("Введите размер фигуры:"));
+                //document.write(typeof (n));
+
+                document.writeln();
+                for (let i = 0; i < n * 2; i++) {
+                    for (let j = 0; j < n * 2; j++) {
+                        if (i + n == j || j + n == i) document.write('\\'.fontcolor("red").fontsize(8));
+                        else if (i == n - 1 - j || i - n + j == n * 2 - 1) document.write('/'.fontcolor("red").fontsize(8));
+                        else document.write('&nbsp;');
+                    }
+                    document.writeln();
+                }
+</script>
+            </pre>
+        </div>
+        <div class="item">
+            <h2>Квадрат</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(1); i <= Number(n); i++) {
+                    for (let j = Number(1); j <= Number(n); j++) {
+                        document.write(`* `.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+</script>
+            </pre>
+        </div>
+
+        <div class="item">
+            <h2>Плюс - Минус в квадрате</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(1); i <= Number(n); i++) {
+                    for (let j = Number(1); j <= Number(n); j++)
+                    {
+                        if (i % 2 == 1 && j % 2 == 1) document.write(`+ `.fontcolor("red").fontsize(8));
+                        else if (i % 2 == 1 && j % 2 == 0) document.write(`- `.fontcolor("red").fontsize(8));
+                       else if (i % 2 == 0 && j % 2 == 1) document.write(`- `.fontcolor("red").fontsize(8));
+                       else if (i % 2 == 0 && j % 2 == 0) document.write(`+ `.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+</script>
+            </pre>
+        </div>
+
+        <div class="item">
+            <h2>Треугольник. Вверх. Вправо.</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(1); i <= Number(n); i++) {
+                    for (let j = Number(1); j <= i; j++) {
+                        document.write(`*`.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+                document.writeln(`<hr>`);
+</script>
+            </pre>
+
+        </div>
+
+        <div class="item">
+            <h2>Треугольник. Вниз. Вправо.</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(n); i >= Number(1); i--) {
+                    for (let j = Number(1); j <= i; j++) {
+                        document.write(`*`.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+                document.writeln(`<hr>`);
+</script>
+            </pre>
+        </div>
+        <div class="item">
+            <h2>Треугольник. Вниз. Влево.</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(n); i >= 0; i--)
+                {
+                    for (let r = n - i; r >= 1; r--) {
+                        document.write(` `);
+                }
+                    for (let j = Number(1); j <= i; j++) {
+                        document.write('*'.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+                document.writeln(`<hr>`);                                  
+            </script>
+            </pre>
+        </div>
+
+        <div class="item">
+            <h2>Треугольник. Вверх. Влево</h2>
+            <pre>
+            <script>
+                document.writeln();
+                for (let i = Number(n); i >= Number(1); i--) {
+                    for (let p = i - 1; p >= 1; p--) {
+                        document.write(` `);
+                    }
+                    for (let j = n - i; j >= 1; j--) {
+                        document.write(`*`.fontcolor("red").fontsize(8));
+                    }
+                    document.write(`<br>`);
+                }
+                document.writeln(`<hr>`);
+</script>
+            </pre>
+        </div>
+    </div>
+
+    
+</body>
+</html>
